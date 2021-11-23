@@ -1,15 +1,16 @@
-¿Que son los principios Solid?
-=====
+# ¿Que son los principios Solid?
+
 Es una serie de cinco reglas o principios que son aplicados en la POO cuyas iniciales dan como resultado el acrónimo SOLID este nombre es definido por Michael Feathers el cual hace referencia a los principios definidos por Robert C. Martín (Tío Bob) y Barbara Liskov.
 
-¿Qué es la cohesión?
-======
+# ¿Qué es la cohesión?
+
 La cohesión en términos de informática se refiere al grado en que diferentes elementos de un mismo sistema permanecen unidos generando un elemento mayor. Podríamos verlo como una clase que integra varios métodos y cada uno de estos métodos está relacionado entre sí, teniendo una “temática” común.
 
-¿Qué es el acoplamiento?
-=======
+# ¿Qué es el acoplamiento?
+
 El acoplamiento es el grado en que todos estos elementos se relacionan entre sí. Entre mayor sean las relaciones o dependencias mayor grado de acoplamiento tendremos.
 
+# SOLID
 
 S — Single-responsibility principle (Principio de responsabilidad única)
 
