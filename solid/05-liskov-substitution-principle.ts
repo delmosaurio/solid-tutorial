@@ -12,9 +12,9 @@ export interface IVehiculoConCombustible {
 
 /**
  *
- * WRONG ejemplo, esta clase debe de ser abstract
+ * WRONG: esta clase debe de ser abstract
  * no deberian de existir provider del tipo generico
- * si no hacen referencia a algo real
+ * si no se hace referencia a algo real
  *
  */
 export class CombustibleProvider {

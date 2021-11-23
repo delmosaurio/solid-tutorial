@@ -31,13 +31,13 @@ export class Vehiculo {
 }
 
 export class TransporteFisico extends Vehiculo {
-  constructor(name, type) {
+  constructor(name: string, type: string) {
     super(name, type);
   }
 }
 
 export class Aereo extends TransporteFisico {
-  constructor(name) {
+  constructor(name: string) {
     super(name, 'aereo');
   }
 }

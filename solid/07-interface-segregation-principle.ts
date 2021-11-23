@@ -56,5 +56,6 @@ const auto = new VehiculoTerrestre('auto');
 const avion = new VehiculoAereo('avion');
 
 console.log(auto.despegueVertical()); // Volver al futuro?
+console.log(avion.volar());
 console.log(avion.despegueVertical());
 
