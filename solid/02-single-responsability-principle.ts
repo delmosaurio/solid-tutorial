@@ -23,7 +23,7 @@ export class Repository<T> {
   }
 
   update(id: string, data: T): T {
-    console.log(`estoy guardando un vehiculo con ${id}`);
+    console.log(`estoy guardando un vehiculo con id ${id}`);
     return data;
   }
 
