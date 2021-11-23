@@ -1,5 +1,9 @@
 {
   "root": true,
+  "env": {
+    "node": true,
+    "jest": true
+  },
   "plugins": [
     "@typescript-eslint"
   ],
@@ -26,7 +30,6 @@
     "key-spacing": [ "error", { "beforeColon": false } ],
     "keyword-spacing": ["error", { "before": true, "after": true }],
     "max-len": ["error", {"code": 110, "ignoreUrls": true}],
-    "no-console": 1,
     "no-extra-semi": "error",
     "no-multi-spaces": [ "error", { "ignoreEOLComments": false }],
     "no-trailing-spaces": "error",

@@ -24,7 +24,8 @@ export class VehiculoRepositoryModel {
   }
 
   save(target: VehiculoRepositoryModel) {
-    console.log('estoy guardando un vehiculo');
+    console.log(`estoy guardando un vehiculo ${target.name}`);
+    return target;
   }
 }
 

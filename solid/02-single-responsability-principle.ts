@@ -23,12 +23,12 @@ export class Repository<T> {
   }
 
   update(id: string, data: T): T {
-    console.log('estoy guardando un vehiculo');
+    console.log(`estoy guardando un vehiculo con ${id}`);
     return data;
   }
 
-  find(query: any): T[] {
-    console.log('estoy buscando un vehiculo');
+  find(query: unknown): T[] {
+    console.log(`estoy buscando un vehiculo ${query}`);
     return [];
   }
 
