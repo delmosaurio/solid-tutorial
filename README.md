@@ -38,3 +38,22 @@ D — Dependency Inversion Principle (Principio de inversión de dependencia)
 A. Los módulos de alto nivel no deben depender de módulos de bajo nivel. Ambos deben depender de abstracciones.
 B. Las abstracciones no deben depender de los detalles. Los detalles deben depender de las abstracciones.
 
+# For Mantainers
+
+## Install dependencies
+
+```
+yarn i
+```
+
+## LINT
+
+```
+yarn run lint
+```
+
+Fix lints
+
+```
+yarn run lint:fix
+```
