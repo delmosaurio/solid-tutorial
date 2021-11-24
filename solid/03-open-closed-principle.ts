@@ -1,42 +1,28 @@
 /**
  * WRONG!
  *
- * NO Permitir que las clases sean extendibles
+ * Permitir que las clases sean extendibles
+ * sin tener que modificar el padre
  *
  */
 
 export class Vehiculo {
 
-  private _name: string;
-  private _type: string;
-
-  constructor(name: string, type: string) {
-    this._name = name;
-    this._type = type;
-  }
-
-  get name() {
-    return this._name;
-  }
-
-  get type() {
-    return this._type;
-  }
+  constructor(
+    public name: string,
+    public type: string
+  ) { }
 
   toString() {
     switch (this.type) {
     case 'terrestre':
-      console.log('a la tierra');
-      break;
+      return 'a la tierra';
     case 'acuatico':
-      console.log('al agua');
-      break;
+      return 'al agua';
     case 'aereo':
-      console.log('al aire');
-      break;
+      return 'al aire';
     default:
-      console.log('no tengo opciones para este tipo');
-      break;
+      return 'no tengo opciones para este tipo';
     }
   }
 

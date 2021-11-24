@@ -6,21 +6,10 @@
  */
 export class Vehiculo {
 
-  private _name: string;
-  private _type: string;
-
-  constructor(name: string, type: string) {
-    this._name = name;
-    this._type = type;
-  }
-
-  get name() {
-    return this._name;
-  }
-
-  get type() {
-    return this._type;
-  }
+  constructor(
+    public name: string,
+    public type: string
+  ) { }
 
   toString() {
     return 'soy un vehiculo';
@@ -48,32 +37,8 @@ export class VehiculoAcuatico extends Vehiculo {
   }
 }
 
-export class VehiculoAereo extends Vehiculo {
-  constructor(name: string) {
-    super(name, 'aereo');
-  }
-
-  toString() {
-    return 'al aire';
-  }
-}
-
-export class VehiculoAiretierra extends Vehiculo {
-  constructor(name: string) {
-    super(name, 'airetierra');
-  }
-
-  toString() {
-    return 'al aire y a la tierra';
-  }
-}
-
 const auto = new VehiculoTerrestre('automovil');
 const lancha = new VehiculoAcuatico('velero');
-const avion = new VehiculoAereo('helicoptero');
-const hidroavion = new VehiculoAiretierra('figura');
 
 console.log(auto.toString());
 console.log(lancha.toString());
-console.log(avion.toString());
-console.log(hidroavion.toString());

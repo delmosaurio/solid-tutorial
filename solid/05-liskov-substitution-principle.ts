@@ -2,7 +2,7 @@
  * WRONG!
  *
  * Las subclases deben de reemplazar metodos
- * sin romper la funcionalidad.
+ * sin romper la funcionalidad del padre.
  *
  */
 
@@ -15,7 +15,6 @@ export interface IVehiculoConCombustible {
  * WRONG: esta clase debe de ser abstract
  * no deberian de existir provider del tipo generico
  * si no se hace referencia a algo real
- *
  */
 export class CombustibleProvider {
   constructor(protected vehiculo: IVehiculoConCombustible) {}

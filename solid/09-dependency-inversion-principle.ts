@@ -8,21 +8,10 @@
 
 export class Vehiculo {
 
-  private _name: string;
-  private _type: string;
-
-  constructor(name: string, type: string) {
-    this._name = name;
-    this._type = type;
-  }
-
-  get name() {
-    return this._name;
-  }
-
-  get type() {
-    return this._type;
-  }
+  constructor(
+    public name: string,
+    public type: string
+  ) { }
 
   cargarCombustible() {
     return 'Cargando combustible';

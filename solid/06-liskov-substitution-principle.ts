@@ -6,7 +6,6 @@
  *
  */
 
-
 export interface IVehiculoConCombustible {
     cargarCombustible(provider: string): string;
 }

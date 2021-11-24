@@ -7,17 +7,11 @@
 
 export class Repository<T> {
 
-  private _table: string;
+  constructor(
+    public table: string
+  ) { }
 
-  constructor(table: string) {
-    this._table = table;
-  }
-
-  get table(): string {
-    return this._table;
-  }
-
-  save(data: T): T {
+  create(data: T): T {
     console.log('estoy guardando un vehiculo');
     return data;
   }
@@ -41,24 +35,13 @@ export class Repository<T> {
 
 export class Vehiculo {
 
-  private _name: string;
-  private _type: string;
-
-  constructor(name: string, type: string) {
-    this._name = name;
-    this._type = type;
-  }
-
-  get name() {
-    return this._name;
-  }
-
-  get type() {
-    return this._type;
-  }
+  constructor(
+    public name: string,
+    public type: string
+  ) { }
 
 }
 
 const vehiculoRepository = new Repository<Vehiculo>('vehiculo');
 const target = new Vehiculo('ferrari', 'terrestre');
-vehiculoRepository.save(target);
+vehiculoRepository.create(target);
